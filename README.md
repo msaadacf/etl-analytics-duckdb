@@ -53,12 +53,29 @@ The pipeline stops if any of these fail:
 ## Repo structure
 
 etl-analytics-duckdb/
-README.md
-requirements.txt
-.gitignore
-data/
-raw/
-transactions.csv
-stores.csv
-src/
-etl.py
+├─ README.md
+├─ requirements.txt
+├─ .gitignore
+├─ data/
+│  └─ raw/
+│     ├─ transactions.csv
+│     └─ stores.csv
+└─ src/
+   └─ etl.py
+
+## How to run (Windows)
+
+### Recommended on Windows PowerShell: run using venv python directly
+```bash
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe src/etl.py
+```
+
+## Outputs (These are generated locally, not committed)
+
+- `warehouse.duckdb` - local analytical warehouse (tables under bronze/silver/gold)
+- `outputs/daily_sales_by_store.parquet` - analytics mart
+- `outputs/category_kpis.parquet` - analytics mart
+
+Thank you!
