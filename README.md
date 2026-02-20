@@ -1,6 +1,6 @@
 # End-to-End ETL Pipeline for Analytics (built using Python, SQL and DuckDB)
 
-I built this ETL as part of a course assignment. It is a production style, zero-cost, efficient ETL pipeline that ingests **raw CSV + external weather API data**, normalizes it into **relational tables**, applies **SQL transformations** (Bronze/Silver/Gold), runs **data quality validation**, and finally outputs **analytics ready marts** for later reporting.
+I built this ETL as part of a course assignment. It is a production style, zero-cost, efficient ETL pipeline that ingests **raw CSV **and** external weather API data**, normalizes it into **relational tables**, applies **SQL transformations** (Bronze/Silver/Gold), runs **data quality validation**, and finally outputs **analytics ready marts** for later reporting.
 
 
 ## What this project does
