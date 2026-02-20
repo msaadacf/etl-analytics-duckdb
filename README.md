@@ -52,7 +52,7 @@ The pipeline stops if any of these fail:
 
 ## Repo structure
 
-```text
+```bash
 etl-analytics-duckdb/
 ├─ README.md
 ├─ requirements.txt
