@@ -52,6 +52,7 @@ The pipeline stops if any of these fail:
 
 ## Repo structure
 
+```text
 etl-analytics-duckdb/
 ├─ README.md
 ├─ requirements.txt
@@ -62,7 +63,7 @@ etl-analytics-duckdb/
 │     └─ stores.csv
 └─ src/
    └─ etl.py
-
+```
 ## How to run (Windows)
 
 ### Recommended on Windows PowerShell: run using venv python directly
